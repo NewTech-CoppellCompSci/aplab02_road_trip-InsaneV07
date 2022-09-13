@@ -24,6 +24,8 @@ package lab;
 
 
 public class Trip {
+	public int Stop1D;
+	public int AF1;
 
 	public static void main(String[] args) {
 		
@@ -55,8 +57,11 @@ public class Trip {
 		
 		trip.addDistance(108.6);
 		trip.addFuel(7.5);
-		
-		System.out.println(trip);
+		System.out.println("Trip: Maryland 2022");
+		System.out.println("Distance:  " + trip.getTotalDistance());
+		System.out.println("Fuel used: " + trip.getTotalFuel());
+		System.out.println("MPG:       " + trip.getMPG() + "\n");
+	
 		
 	}
 	
